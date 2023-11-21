@@ -1,0 +1,39 @@
+[
+    {
+      "title": "Async Case",
+      "instruction": "Create a function that resolves a promise after 2 seconds.",
+      "starter": "function delayedResolve() {\n  // Your code here\n}\n\n// Call the function and handle the resolved promise (print the result)",
+      "solution": "function delayedResolve() {\n  return new Promise(resolve => setTimeout(() => resolve('Promise resolved after 2 seconds'), 2000))\n}\n\ndelayedResolve().then(result => console.log(result))"
+    },
+    {
+      "title": "JS OOP",
+      "instruction": "call Person that takes firstName and lastName as parameters and sets them as properties on the created object.",
+      "starter": "function Person(firstName, lastName) {\n  // complete the code here\n}\n\n// Creating an instance of the Person object\nconst personInstance = new Person('John', 'Doe');\nconsole.log(); // complete in order to get Output: John Doe",
+      "solution": "// JavaScript OOP example\nfunction Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\n// Creating an instance of the Person object\nconst personInstance = new Person('John', 'Doe');\nconsole.log(personInstance.firstName, personInstance.lastName)"
+    },
+    {
+      "title": "Array Method Practice",
+      "instruction": "Practice using array.filter() to filter elements greater than 2 from an array of numbers.",
+      "starter": "const numbers = [1, 2, 3, 4, 5];\nconst filteredNumbers = // Your code here",
+      "solution": "const numbers = [1, 2, 3, 4, 5];\nconst filteredNumbers = numbers.filter(number => number > 2)"
+    },
+    {
+      "title": "String Method Practice",
+      "instruction": "Use string methods to convert a string to uppercase.",
+      "starter": "const text = 'hello, world!';\nlet uppercaseText = // Your code here",
+      "solution": "const text = 'hello, world!';\nlet uppercaseText = text.toUpperCase()"
+    },
+    {
+      "title": "Conditional Statement",
+      "instruction": "Create a function to check if a number is positive, negative, or zero.",
+      "starter": "function checkNumberType(number) {\n  // Your code here\n}\n\nconst num = 7;\nconst result = checkNumberType(num);\nconsole.log(result); // Output should be 'positive', 'negative', or 'zero'",
+      "solution": "function checkNumberType(number) {\n  if (number > 0) {\n    return 'positive'\n  } else if (number < 0) {\n    return 'negative'\n  } else {\n    return 'zero'\n  }\n}\n\nconst num = 7;\nconst result = checkNumberType(num)\nconsole.log(result); // Output should be 'positive', 'negative', or 'zero'"
+    },
+    {
+      "title": "Array Sort",
+      "instruction": "Use array.sort() to sort elements in an array.",
+      "starter": "const unsortedArray = [3, 1, 4, 2, 5];\nconst sortedArray = // Your code here",
+      "solution": "const unsortedArray = [3, 1, 4, 2, 5];\nconst sortedArray = unsortedArray.sort((a, b) => a - b)"
+    }
+  ]
+  
