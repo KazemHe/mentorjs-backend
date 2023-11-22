@@ -29,7 +29,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use(cors(corsOptions))
  }
 
-const codeblockRoutes = require("./api/codeblock/codeBlock.routes");
+const codeblockRoutes = require("./api/codeBlock/codeBlock.routes");
 
 app.use("/api/codeblock", codeblockRoutes);
 
